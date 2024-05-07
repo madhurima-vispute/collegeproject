@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+</head>
+<body>
+    <%- include('template\\header.ejs'); -%>
+
+    <div class="reset">
+        <div class="box">
+            <h2 class="title">FORGOTTEN PASSWORD</h2>
+            <div class="box-reset">
+                <div class="form-wrapper">
+                    <div class="top-header">
+                        <p>Enter your email to reset your password.</p>
+                    </div>
+                    <form class="form">
+                        <div class="input-group">
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <button type="submit">Reset Your Password</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('template\\footer.ejs') %>
+
+
+</body>
+</html>

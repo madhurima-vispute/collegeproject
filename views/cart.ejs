@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .underline{
+      font-size: 16px;
+      font-family: 'Courier New', Courier, monospace;
+      text-decoration:line-through;
+    }
+
+    p{
+      font-size: 19px;
+      color: black;
+      font-weight: 600;
+    }
+
+    p span{
+      font-size: 16px;
+      color: gray;
+      margin-left: 120px;
+    }
+        
+    </style>
+</head>
+<body>
+
+    <%- include('template\\header.ejs') %>
+
+    <div class="bg-white py-5">
+    <div class="card float-end mt-5 w-25 me-5">
+      <div class="card-body">
+        <p class="card-title">Total Mrp:<span> ₹<%= total  %> </span></p>
+        <p class="card-title">Platform fee:<span> Free </span></p>
+        <p class="card-title">Shipping fee:<span> Free </span></p>
+        <p class="card-title">Total Amt:<span> ₹<%= total  %> </span></p>
+        <a href="#" class="btn btn-outline-dark d-grid mx-auto">Checkout</a>
+      </div>
+    </div>
+
+    <% cartDetail.forEach(function(cartItem,i){ %>
+    <div class="card w-75 my-5 mx-5" style="max-width: 800px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src=<%= product[cartItem.product_id-1].img_1 %> class="img-fluid w-100">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h3 class="card-title"><%= product[cartItem.product_id-1].p_name %></h3>
+            <h4 class="card-text">Size: <%= cartItem.size %></h4>
+            <h4 class="card-text"><small class="text-body-secondary">QTY: <%= cartItem.quantity %></small></h4>
+            <h4 class="card-text">₹<%= product[cartItem.product_id-1].price*cartItem.quantity %><small class="underline text-body-secondary mx-3">  ₹<%= product[cartItem.product_id-1].price %></small></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%})%>
+
+
+      <form method="post" action="/clearcart" class="py-5">
+        <button type="submit" class="btn btn-outline-dark d-grid mx-auto">Clear</button>
+      </form>
+    </div>
+
+      <%- include('template\\footer.ejs') %>
+
+
+</body>
+</html>

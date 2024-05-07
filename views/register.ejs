@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <%- include('template\\header.ejs'); -%>
+
+        <div class="signup">
+            <div class="box">
+                <h2 class="title">CREATE ACCOUNT</h2>
+
+                
+                <div class="switch">
+                    <a href="http://localhost:8080/login" class="login" id="login">SignIn</a>
+                    <a href="http://localhost:8080/register" class="register" id="register">SignUp</a>
+                    <div class="btn-active" id="reg-btn"></div>
+                </div>
+                <div class="box-register">
+                    <div class="form-wrapper">
+                        <div class="top-header">
+                            <h3>WELCOME.</h3>
+                            <p>Sign up with your email and password.</p>
+                        </div>
+                        <form class="form" method="post">
+                            <div class="input-group">
+                                <input type="text" name="name" required>
+                                <label>Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" name="email" required>
+                                <label>Email</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="password" name="password" required>
+                                <label>Password</label>
+                            </div>
+                            <div class="remember">
+                                <input type="checkbox" required>
+                                <label>I agree to the terms & conditions</label>
+                            </div>
+                            <h6> <%= status %> </h6>
+                            <button type="submit">Sign Up</button>
+                            <div class="signUp-link">
+                                <p>Already have an account? <a href="http://localhost:8080/login" class="signInBtn-link" id="signInBtn">Sign In</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include('template\\footer.ejs') %>
+
+</body>
+
+</html>

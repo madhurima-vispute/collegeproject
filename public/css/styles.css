@@ -1,0 +1,1164 @@
+/*--------------------------------------------------------------
+# Google Font
+--------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    padding: 0 10px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 0 10px 0 black;
+    border-top: 15px solid black;
+    border-width: 100%;
+}
+
+
+.navbar-menu-icon {
+    text-decoration: none;
+    display: flex;
+    margin: auto;
+}
+
+.navbar-menu-icon .bx {
+    font-size: 32px;
+    color: black;
+}
+
+.navbar-menu-icon span {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    font-family: "Kode Mono", monospace;
+    margin-left: 7px;
+    margin-top: 3.5px;
+}
+
+.navbar-brand {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    margin-right: 0;
+}
+
+.navbar-brand:hover {
+    color: black;
+}
+
+.nav-link {
+    padding: auto;
+    margin: auto;
+    display: flex;
+}
+
+.nav-link .bx {
+    color: black;
+    font-size: 25px;
+}
+
+.sidebar,
+.fashion,
+.accessories,
+.explore {
+    position: fixed;
+    top: 0;
+    left: -180%;
+    background-color: white;
+    width: 400px;
+    height: 100vh;
+    z-index: 100;
+    padding: 24px 0;
+    overflow-y: scroll;
+}
+
+.header_close {
+    position: absolute;
+    display: flex;
+    color: black;
+    font-size: 30px;
+    right: 24px;
+    cursor: pointer;
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin-top: 60px;
+}
+
+.nav_item {
+    margin: 1rem 3rem;
+}
+
+.nav_link {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.nav_link:hover {
+    margin-right: 10px;
+}
+
+
+.nav_list li {
+    list-style-type: none;
+}
+
+.nav_list li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav_option {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.nav_option .nav_item {
+    margin: .5rem 3rem;
+}
+
+.nav_option li a {
+    text-decoration: underline;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    color: black;
+    transition: .9s;
+}
+
+.nav_option li a:hover {
+    font-weight: 500;
+}
+
+.nav-line {
+    height: 3px;
+    color: black;
+    margin-top: 40px;
+}
+
+
+.arrow {
+    display: inline;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 5px;
+    color: black;
+}
+
+.show {
+    left: 0%;
+}
+
+.badge{
+    font-size: 11px;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer{
+    border-bottom: 15px solid black;
+    background-color: #212121;
+    padding: 50px 0 20px 0;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+
+.footer-col h4{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-col ul li a{
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    transition: .5s ease-in;
+}
+
+.footer-col ul li span{
+    color: white;
+    font-size: 15px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-col ul li a:hover{
+    text-decoration: underline;
+}
+
+.footer h1{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.footer p{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+
+}
+
+.footer-line{
+    border: 1px solid gray;
+    margin: 25px 0;
+}
+
+
+/*--------------------------------------------------------------
+# Main Page
+--------------------------------------------------------------*/
+
+.women_page{
+    background-image: url(../image/main-img.jpg);
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.women-content{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    text-align: center;
+}
+
+.women-content p{
+    font-size: 25px;
+    color: rgb(109, 99, 99);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.women-content #btn-women{
+    position: relative;
+    width: 280px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid white;
+    margin: 0 auto;
+    color: white;
+    transition: .5s ease-in;
+}
+
+#btn-women a{
+    text-decoration: none;
+    color: gray;
+}
+
+
+.women_page #btn-women:hover {
+    background: white;
+}
+
+.women_page #btn-women a:hover{
+    color: black;
+}
+
+
+.men_page{
+    background-image: url(../image/main-img2.jpg);
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.men-content{
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    text-align: center;
+}
+
+.men-content p{
+    font-size: 25px;
+    color: rgb(109, 99, 99);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.men-content #btn-men{
+    position: relative;
+    width: 280px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    margin: 0 auto;
+    transition: .5s ease-in;
+}
+
+#btn-men a{
+    text-decoration: none;
+    color: gray;
+}
+
+
+.men_page #btn-men:hover {
+    background: white;
+}
+
+.men_page #btn-men a:hover{
+    color: black;
+}
+
+.home-card img{
+    height: 550px;
+    width:auto;
+}
+
+.home-card h5{
+    color: rgb(206, 199, 199);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.card-btn{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    transition: .5s ease-in;
+}
+
+.card-btn a{
+    text-decoration: none;
+    color: gray;
+}
+
+.card-btn:hover{
+    background-color: white;
+}
+
+.card-btn a:hover{
+    color: black;
+}
+
+video {
+    height: auto;
+    min-height: auto;
+    width: 100%;
+    min-width: auto;
+}
+
+video::-webkit-media-controls-fullscreen-button,
+video::-webkit-media-controls-timeline,
+video::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-time-remaining-display {
+    display: none !important;
+}
+
+
+/*--------------------------------------------------------------
+# Login, Register, Reset Page
+--------------------------------------------------------------*/
+
+.signin,
+.signup,
+.reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    width: 100%;
+    background: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+    overflow: hidden;
+}
+
+.reset{
+    min-height: 70vh;
+}
+
+.box{
+    position: relative;
+    width: 600px;
+    height: 550px;
+    background: white;
+    color: black;
+}
+
+.reset .box{
+    width: 600px;
+    height: 400px;
+}
+
+
+.box-login,
+.box-register,
+.box-reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 180px;
+    transition: .5s ease-in-out;
+}
+
+.switch{
+    display: flex;
+    position: absolute;
+    top: 90px;
+    left: 45px;
+    width: 85%;
+    height: 50px;
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+}
+
+.switch a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-family: "Khula", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+    text-decoration: none;
+    width: 50%;
+    z-index: 10;
+}
+
+
+#log-btn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    border-bottom: 4px solid black;
+}
+
+#reg-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 260px;
+    border-bottom: 4px solid black;
+}
+
+
+.title {
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.reset .title{
+    text-align: center;
+    margin-top: 90px;
+}
+
+
+.top-header h3 {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.top-header p {
+    text-align: center;
+    color: black;
+    font-size: 15px;
+}
+
+.reset .top-header p{
+    margin-top: -15px;
+}
+
+
+.input-group {
+    position: relative;
+    margin: 25px 0;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: gray;
+    pointer-events: none;
+    transition: .5s ease-in-out;
+}
+
+.input-group input {
+    width: 350px;
+    height: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: -5px;
+}
+
+.remember {
+    margin: 12px 0 15px 5px;
+}
+
+.remember label {
+    font-size: 14px;
+    color: gray;
+}
+
+.remember label a {
+    text-decoration: none;
+    font-weight: 500;
+    color: gray;
+    font-size: 14px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.remember label a:hover {
+    text-decoration: underline;
+}
+
+
+.remember input {
+    accent-color: black;
+}
+
+button {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: black;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+
+.signUp-link {
+   display: none;
+}
+
+/*--------------------------------------------------------------
+# Account Page
+--------------------------------------------------------------*/
+.account-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    min-height: 30vh;
+    background-image: url(../image/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 1350px 200px;
+    color: white;
+}
+
+.account-content h1{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 2%;
+}
+
+.account-content p a{
+    text-decoration: underline;
+    color: white;
+    font-size: 16px;
+    padding: 0 26px;
+}
+
+.account-nav{
+    height: 50px;
+    border-bottom: 1px solid rgb(197, 195, 195);
+    text-align: center;
+    align-items: center;
+}
+
+.nav-link{
+    color: black;
+    margin-top: 5px;
+}
+
+#overview {
+    position: relative;
+    font-weight: 600;
+}
+
+#overview::after{
+    content: ' ';
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+}
+
+#orders{
+    position: relative;
+    font-weight: 600;
+}
+
+#orders::after{
+    content: ' ';
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+}
+
+#account{
+    position: relative;
+    font-weight: 600;
+}
+
+#account::after{
+    content: ' ';
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.overview h1{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight:700;
+    margin-left: 220px;
+}
+
+.btn-outline-dark{
+    width: 210px;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*--------------------------------------------------------------
+# Thankyou Page
+--------------------------------------------------------------*/
+
+.thankyou-logo h1{
+    font-size: 40px;
+    text-align: center;
+    margin-right: 0;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.thankyou_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 100%;
+    background: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+    overflow: hidden;
+}
+
+
+.thankyou-content h3{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Prompt", sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 2%;
+}
+
+.thankyou-content h1{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Prompt", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+
+.thankyou-content p{
+    font-size: 15px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Explore Page
+--------------------------------------------------------------*/
+.explore_page{
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.explore-content{
+    width: 100%;
+    top: 0;
+    bottom: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    text-align: center;
+}
+
+.explore-content h1{
+    color: white;
+}
+
+.explore-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    width: 100%;
+    background: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+}
+
+.about{
+    width: 50%;
+    margin: 80px 0;
+}
+
+.about p{
+    font-size: 20px;
+    line-height: 35px;
+}
+
+/*--------------------------------------------------------------
+# Arts Page
+--------------------------------------------------------------*/
+.arts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: white;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.arts h3{
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+}
+/*--------------------------------------------------------------
+# Sustainability Page
+--------------------------------------------------------------*/
+.sustainability{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: white;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.sustainability h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 40px 0;
+}
+
+/*--------------------------------------------------------------
+# Fashion Show Page
+--------------------------------------------------------------*/
+.fashion-show{
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.fashion-img img{
+height: 550px;
+}
+
+/*--------------------------------------------------------------
+# Admin Page
+--------------------------------------------------------------*/
+
+.admin-logo h1{
+    font-size: 40px;
+    text-align: center;
+    margin-right: 0;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.dashboard h1{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight:700;
+    margin-left: 165px;
+}
+
+#table-container,
+#productForm,
+#displayProduct{
+    display: none;
+  }
+
+#order-container{
+    display: none;
+}
+
+.btn-outline-dark{
+    width: 220px;
+}
+
+
+/*--------------------------------------------------------------
+# Media Query
+--------------------------------------------------------------*/
+@media (max-width: 1120px) {
+    .arts{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .arts h3{
+        text-align: center;
+        font-size: 25px;
+        margin: 20px 0;
+    }
+
+    .btn-outline-dark{
+        width: auto;
+    }
+
+    .card{
+        height: auto;
+    }
+
+    .card-text{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+
+    header {
+        height: 60px;
+    }
+
+    .navbar-menu-icon {
+        display: flex;
+        position: absolute;
+        margin: auto;
+        right: -40px;
+    }
+
+    .navbar-menu-icon span {
+        display: none;
+    }
+
+
+    .sidebar {
+        width: 50%;
+    }
+
+    .nav-link .bx {
+        display: none;
+    }
+
+    .navbar-brand {
+        font-size: 30px;
+        margin-left: 15px;
+    }
+
+    .container-fluid {
+        width: 100%;
+        margin: auto;
+        margin-left: -12px;
+    }
+
+    .title {
+        font-size: 38px;
+        margin: auto;
+        padding: auto;
+    }
+
+    .switch{
+        display: flex;
+        position: absolute;
+        top: 90px;
+        left: 80px;
+        width: 70%;
+    }
+
+    #log-btn{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 210px;
+        border-bottom: 4px solid black;
+    }
+    
+    #reg-btn{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 210px;
+        border-bottom: 4px solid black;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    .signin,
+    .signup{
+        min-height: 70vh;
+    }
+
+    .box{
+        height: 450px;
+    }
+
+    .signup .box{
+        height: 500px;
+    }
+
+    .switch{
+       display: none;
+    }
+
+    #log-btn{
+      display: none;
+    }
+    
+    #reg-btn{
+        display: none;
+    }
+    
+
+    .top-header{
+        margin-top: -80px;
+    }
+
+    .signUp-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        margin: 15px 0;
+    }
+    .signUp-link p {
+        color: black;
+    }
+    
+    .signUp-link p a {
+        color: gray;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    .signUp-link p a:hover {
+        text-decoration: underline;
+    }
+
+}
+
+
+@media screen and (max-width:490px) {
+
+    .reset {
+        height: 90vh;
+    }
+
+    .title {
+        font-size: 34px;
+        margin: auto;
+        padding: auto;
+    }
+
+    .reset .top-header p{
+        margin-top: 0;
+    }
+
+    .input-group input {
+        width: 300px;
+        height: 40px;
+        margin: auto;
+        padding: auto;
+    }
+
+}
+
+
+@media screen and (max-width:350px) {
+    .reset {
+        min-height: 100vh;
+    }
+
+    button {
+        width: 90%;
+        height: 30px;
+        margin: auto 15px;
+    }
+
+    .reset  p {
+        font-size: 15px;
+    }
+
+    .top-header p{
+        font-size: 12px;
+    }
+
+    .input-group input {
+        width: 250px;
+        height: 40px;
+        margin: auto;
+        padding: auto;
+    }
+
+    .remember label {
+        font-size: 11px;
+    }
+    
+    .remember label a {
+        font-size: 11px;
+        margin-left: 60px;
+    }
+
+    .remember input{
+        height: 10px;
+        width: 10px;
+    }
+
+}

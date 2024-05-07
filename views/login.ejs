@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <%- include('template\\header.ejs'); -%>
+
+        <div class="signin">
+            <div class="box">
+                <h2 class="title">LOGIN ACCOUNT</h2>
+                <div class="switch">
+                    <a href="http://localhost:8080/login" class="login" id="login">SignIn</a>
+                    <a href="http://localhost:8080/register" class="register" id="register">SignUp</a>
+                    <div class="btn-active" id="log-btn"></div>
+                </div>
+                <div class="box-login">
+                    <div class="form-wrapper">
+                        <div class="top-header">
+                            <h3>WELCOME BACK.</h3>
+                            <p>Sign in with your email and password.</p>
+                        </div>
+                        <form class="form" method="post">
+                            <div class="input-group">
+                                <input type="email" name="email" required>
+                                <label>Email</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="password" name="password" required>
+                                <label>Password</label>
+                            </div>
+                            <div class="remember">
+                                <input type="checkbox">
+                                <label>Remember me <a href="http://localhost:8080/reset">Forgot
+                                        password?</a></label>
+                            </div>
+                            <h6> <%= status %> </h6>
+                            <button type="submit">Login</button>
+                            <div class="signUp-link">
+                                <p>Don't have an account? <a href="http://localhost:8080/register" class="signUpBtn-link" id="signUpBtn">Sign Up</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include('template\\footer.ejs') %>
+
+
+
+</body>
+
+</html>
